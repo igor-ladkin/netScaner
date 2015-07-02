@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150702133837) do
+ActiveRecord::Schema.define(version: 20150702143030) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "interconnections", force: :cascade do |t|
     t.string   "node_port"
-    t.string   "child_port"
+    t.string   "child_node_port"
     t.string   "status"
     t.time     "last_time_active"
     t.integer  "node_id"
