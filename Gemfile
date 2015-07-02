@@ -16,6 +16,7 @@ gem 'pg'
 group :development do
   gem 'better_errors'
   gem 'spring'
+  gem 'terminal-notifier-guard'
 end
 
 group :development, :test do
@@ -32,4 +33,10 @@ group :development, :test do
   gem 'rubocop'
   gem 'shoulda-matchers'
   gem 'spring-commands-rspec'
+
+  gem 'guard'
+  gem 'guard-rspec', require: false
+  gem 'guard-bundler', require: false
+  gem 'guard-rails'
+  gem 'guard-migrate'
 end
